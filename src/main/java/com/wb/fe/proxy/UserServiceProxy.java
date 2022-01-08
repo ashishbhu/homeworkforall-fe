@@ -23,8 +23,8 @@ public class UserServiceProxy {
 	
 	private String WB_BASE_URL;
 	
-	@Autowired
-	private RestTemplate restTemplate;
+	//@Autowired
+	private RestTemplate restTemplate = new RestTemplate();
 
 	public ResponseDTO signup(SignupRequestFE request) {
 		ResponseDTO response = new ResponseDTO();
