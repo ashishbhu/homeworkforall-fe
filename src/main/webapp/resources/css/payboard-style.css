@@ -1,0 +1,535 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin:0px;
+	padding:0px;
+}
+p{
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Medium.eot');
+    src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff'),
+        url('../fonts/FranklinGothic-Medium.ttf') format('truetype'),
+        url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+.wrapper{
+	width: 100%;
+	float: left;
+}
+
+header {
+    width: 100%;
+    float: left;
+    padding: 12px  46px;
+    background: rgb(110,136,215);
+    background: -moz-linear-gradient(top, rgba(110,136,215,1) 0%, rgba(92,165,226,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(110,136,215,1) 0%,rgba(92,165,226,1) 100%);
+    background: linear-gradient(to bottom, rgba(110,136,215,1) 0%,rgba(92,165,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e88d7', endColorstr='#5ca5e2',GradientType=0 );
+}
+.main_content {
+    width: 100%;
+    float: left;
+}
+a{
+    color: #3e83ca;
+}
+.logo {
+    max-width:153px;
+    width: 100%;
+    float: left;
+    padding-top: 3px;
+}
+.logo img{
+	width:100%;
+	float:left;
+	height:auto;
+}
+.detail_col {
+    max-width: 455px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 63px;
+    padding: 10px;
+}
+.content_col {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.content_col p {
+    margin-bottom: 7px;
+}
+p.italic_line {
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+
+
+header.payboard-header{
+	padding: 82px 0px 52px  0px; text-align:center;
+	background:url(http://d19d4vszpb8ku9.cloudfront.net/39063fad-ab3d-4f56-b6a0-fedaecaf5bda_original.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+header.payboard-header .logo{
+	float:none; display:inline-block; max-width:280px;
+}
+header.payboard-header h3{
+	font-size:30px; color:#fff; font-weight:300; margin:20px 0px;
+}
+.header-downloads-bnr{
+	max-width:783px; display:inline-block; width:100%; background:#82ade3; border-radius:5px; padding:28px 100px;
+}
+.download-free-app{
+	width:210px; float:left; margin-right:40px;
+}
+.download-free-app h4{
+	font-size:25px; color:#fff; font-weight:300; margin-bottom:15px;
+}
+a.how-install{
+	font-size:28px; color:#fff; font-weight:300; font-family: 'Roboto Condensed', sans-serif; float:left; margin:53px 0px 0px;
+}
+a.how-install:hover{
+	color:#000;
+}
+
+
+.payboard-content{
+	padding:75px 0px;
+}
+.payboard-detail-col{
+	max-width:1177px;
+	margin:0px auto;
+}
+.payboard-detail-col h4{
+	font-size:26px; color:#6e87d7; text-decoration:underline; font-family: 'Roboto', sans-serif; font-weight:500; padding:0px 146px; margin-bottom:33px;
+}
+.install-steps{
+	width:100%; float:left; background:#ecf4fe; margin-bottom:17px; padding:15px 0px 15px 146px;
+}
+.install-steps h5{
+	font-size:22px; color:#454444; font-weight:400; font-family: 'Roboto', sans-serif; 
+	width:100%; float:left;
+}
+.install-steps h5 .txt-bold{
+	color:#282828; font-weight:500;
+}
+.install-steps h5 .step-no{
+	float:left; width:20px;
+}
+.install-steps h5 .txt-head{
+	width:83%; float:left;
+}
+.install-steps h5 a{
+	color:#282828; text-decoration:underline;
+}
+.install-steps h5 a:hover{
+	color:#7087d7;
+}
+.unknown-source-cl{
+	max-width:470px; width:100%; float:left; background:#fafafa; border:1px solid #c5c5c6; padding:13px 25px; margin:25px 0px 0px;
+}
+.unknown-source-cl p{
+	font-size:17px; color:#929292;
+}
+
+.unknow-left-text{
+	width:86%; float:left;
+}
+.unknow-left-text h5{
+	margin-bottom:5px;
+}
+
+.switch {
+  position: relative;
+  float:left;
+  width: 50px;
+  height: 25px;
+  margin:20px 0px 0px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: -3px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #56c1e5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+
+.slider.round:before {
+  border-radius: 50%; border:1px solid #ccc;
+}
+/*==============================================================
+                       Profile Page
+================================================================*/
+.profile_header{
+  width: 100%;
+  float: left;
+  min-height: 332px;
+  background: -moz-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(109,137,215,1)), color-stop(49%, rgba(93,164,226,1)), color-stop(100%, rgba(73,196,238,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d89d7', endColorstr='#49c4ee',GradientType=0 ); /* ie6-9 */
+}
+.profile_logo{
+  max-width: 165px;
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+}
+.profile_logo img{
+  max-width: 100%;
+}
+
+.profile_details{
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-top: 72px;
+}
+
+.profile_details h1{
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.profile_details span{
+  display: inline-block;
+  color: #fff;
+  font-size: 39px;
+  max-width: 280px;
+  width: 100%;
+  border:1px solid #91bfe0;
+  border-radius: 0px;
+  background: #4aade2;
+  margin-top: 25px;
+  font-family: 'Franklin Gothic Medium',"Franklin Gothic",sans-serif;
+  box-shadow: 0px 2px 34px rgba(0, 0, 0, 0.33);
+}
+
+.profile_details span i.currency_icn{
+  margin-right: 10px;
+  font-size: 34px;
+}
+
+.profile_cntnt{
+  width: 100%;
+  float: left;
+}
+
+.rewards_col{
+  width: 100%;
+  float: left;  
+  padding: 30px 200px 30px 0;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+
+.rewards_col h3{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  position: relative;
+ 
+}
+
+.rewards_col h3>img{
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 15px;
+  height: 21px;
+}
+
+
+.rewards_col>h3>span{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rewards_col>p{
+   font-size: 19px;
+   color: #7f7e7e;
+   font-weight: 100;
+   position: relative;
+   padding-left: 34px;
+   margin-top: 20px;
+}
+
+.rewards_col>p>img{
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 21px;
+  height: 21px;
+}
+
+.rewards_col span.reward_date{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #767575;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+
+.bottom_pagination{
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.bottom_pagination ul{
+  margin-top: 38px;
+}
+
+.bottom_pagination ul li{
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: #ededed;
+  border:1px solid #d4d4d4;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.bottom_pagination ul li.prev>a,
+.bottom_pagination ul li.next>a{
+  line-height: 35px;
+}
+
+.bottom_pagination>ul>li>a{
+  display: block;
+  font-size: 22px;
+  color: #828282;
+  font-family: 'Roboto', sans-serif;
+  line-height: 42px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.bottom_pagination>ul>li>a:hover{
+  text-decoration: none;
+}
+
+.bottom_pagination>ul>li.active{
+  background: -moz-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(109,137,215,1)), color-stop(49%, rgba(93,164,226,1)), color-stop(100%, rgba(73,196,238,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(109,137,215,1) 0%, rgba(93,164,226,1) 49%, rgba(73,196,238,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d89d7', endColorstr='#49c4ee',GradientType=0 ); /* ie6-9 */
+}
+.bottom_pagination>ul>li.active>a{
+   color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 999px){
+	header.payboard-header .logo {
+    max-width: 230px;
+}
+header.payboard-header h3 {
+    font-size: 26px;
+}
+.download-free-app h4 {
+    font-size: 22px;
+}
+a.how-install {
+    font-size: 24px;
+}
+.payboard-detail-col h4 {
+    font-size: 23px; padding:0px 60px;
+}
+.install-steps {
+    padding: 15px 0px 15px 60px;
+}
+.install-steps h5 {
+    font-size: 20px;
+}
+}
+@media only screen and (min-width: 267px) and (max-width: 767px){
+
+.profile_details span i.currency_icn{
+  font-size: 28px;
+}
+.profile_details{margin-top:55px;}
+.profile_details h1{font-size:32px;}
+.profile_details span {
+	font-size: 32px;
+	max-width: 242px;
+}
+.rewards_col span.reward_date{
+  position: static;
+  font-size: 12px;
+  float: right;
+  margin-bottom:10px;
+}
+.profile_header{
+min-height:286px;}
+header {
+    padding: 12px 19px; text-align:center;
+ }
+ .detail_col {
+    margin-top: 18px;
+     padding: 16px;
+}
+img.gift_img{width: 120px;}
+.logo {
+    max-width: 126px; float:none; display:inline-block;
+}
+.content_col p {
+    margin-bottom: 12px;
+}
+.content_col {
+    margin-top: 18px;
+     margin-bottom: 0px;
+	 font-size:16px;
+	 text-align:center;
+}
+p.italic_line {
+    text-align:center;
+    font-size: 14px;
+}
+header.payboard-header .logo {
+    max-width: 170px;
+}
+header.payboard-header h3 {
+    font-size: 22px;
+}
+.header-downloads-bnr {
+    padding: 28px 20px;
+}
+.download-free-app h4 {
+    font-size: 20px;
+
+}
+a.how-install {
+    font-size: 23px;
+}
+.payboard-content {
+	text-align:center;
+}
+.payboard-detail-col h4 {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.install-steps {
+    margin-bottom: 12px;
+    padding: 15px 10px;
+}
+.install-steps h5 {
+    font-size:16px;
+}
+.install-steps h5 .step-no {
+	float:none;
+}
+.install-steps h5 .txt-head {
+    float:none;
+}
+.unknown-source-cl {
+    float: none;
+	    text-align: center;
+	display: inline-block;
+}
+header.payboard-header {
+    padding: 42px 20px 52px 20px;
+}
+.unknow-left-text {
+    width: 100%;
+}
+.switch {
+  
+    float: none;
+   
+    display: inline-block;
+}
+.rewards_col{padding: 30px 0 0 0;}
+.rewards_col h3 {font-size: 18px;}
+.rewards_col > h3 > span {font-size: 20px;}
+.rewards_col > p {
+  font-size: 16px;
+  margin:20px 0;
+}
+
+.bottom_pagination ul li{margin:0 5px;}
+}
+@media only screen and (min-width: 267px) and (max-width: 467px){
+	.download-free-app {
+		float:none; display:inline-block;
+    margin-right: 0px;
+	}
+	a.how-install {
+		float:none; display:inline-block; margin:20px 0px 0px;     width: 100%;
+}
+}

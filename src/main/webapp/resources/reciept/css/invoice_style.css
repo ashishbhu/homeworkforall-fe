@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p{font-size: 16px;}
+
+.wdth100{
+    width: 100%;
+    float: left;
+}
+
+section,header,footer{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+}
+
+a:hover,a:focus{text-decoration: none;}
+
+.page_wrapper{
+    width: 100%;
+    float: left;
+    position: relative;
+    background: rgba(250,250,250,.87);
+}
+
+.container.cstm_container{
+    max-width: 767px;
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+
+/*===========================Receipt CSS===========================*/
+
+.bordr_btm{border-bottom: 1px solid #000;}
+
+.align_top{align-items:flex-top;}
+
+.receipt{background:#fff;}
+
+.receipt img{max-width: 100%;}
+
+.receipt h4{
+    font-size: 20px;
+}
+
+.receipt_wrapper{border:1px solid #010101;}
+
+.receipt_head img{max-width: 100%;}
+
+.receipt_head_col:first-child{
+    border-right: 1px solid #000;
+}
+
+.receipt_head_col{
+   width: 50%;
+   float: left;   
+   padding: 10px 16px;
+
+}
+
+.receipt_head_col h4{
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.receipt_head_rt{text-align: right;}
+
+
+.barcode_head{
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.barcode_head h4{
+    font-weight: 700;
+}
+
+.invoice_details{
+    padding: 16px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.invoice_col{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.invoice_col>span{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.invoice_no{
+    float: right;
+    justify-content: flex-end;
+}
+
+.barcode_wrap{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.barcode_loc{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.shipping_row{
+    padding: 0px 16px;
+    display: flex;
+}
+
+.align_cent{align-items: center;}
+
+
+.shipping_col_lt{
+    width: 70%;
+    float: left;
+    border-right: 1px solid #000;
+    padding: 6px 0;
+}
+
+.shipping_col_lt>span{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.cust_name{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.cust_contact{
+    font-size: 15px;
+    font-weight: 700;
+    margin:6px 0;
+    line-height: 22px;
+}
+
+.cust_add{
+    font-size: 16px;
+    font-weight: 300;
+    line-height:24px;
+    margin-bottom: 0px;
+}
+
+.shipping_col_rt{
+    width: 30%;
+    float: left;
+    text-align: center;
+    
+}
+
+.shipping_col_rt h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cust_add .cust_contact{margin:0px;}
+
+.selling_date{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.tbl_wrapper{overflow-x: hidden;}
+
+.tbl_wrapper table thead tr:first-child{border-top: 1px solid #000;}
+
+.tbl_wrapper table tr th,
+.tbl_wrapper table tr td{
+    border: 1px solid #000;
+    padding: 6px 8px;
+    border-right: 0px;
+}
+
+.tbl_wrapper table tr th:first-child,
+.tbl_wrapper table tr td:first-child{
+    border-left: 0px;
+}
+
+.tbl_wrapper table tr th>div{
+    width: 240px;
+}
+
+.tbl_wrapper tbody{min-height: 130px;}
+
+.tbl_wrapper .table-bordered{
+    border: 1px solid #000;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 0px;
+}
+
+.tbl_cntnt{
+    min-height: 35px;
+}
+
+.return_add{
+    padding: 6px 16px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.return_add>img{max-width: 100%;}
+
+.return_add h4{
+    margin-left: 20px;
+}
+.barcode_col{
+	width:100%;float:left;display:flex;justify-content:space-between;
+}
+

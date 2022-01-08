@@ -1,0 +1,297 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background: url(https://cdn.mall91.com/a4533fbe-0b0c-49c9-bd6c-0d85e8c669e5_original.jpg) no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 541px;
+    height: auto;
+    padding: 46px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #3A3A3A;
+    line-height: 53px;
+}
+
+.Sign_in-page {
+    display: block;
+    background-color: #fff;
+    float: left;
+    margin: 20px 40px;
+    width: 450px;
+    height: 680px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border-radius: 11px;
+    /* box-shadow: 10px 10px 50px 11px #707070; */
+}
+
+.signin-block {
+    width: 75%;
+    height: auto;
+    margin: 40px 0;
+    /* margin-top: 23px; */
+    line-height: 30px;
+}
+
+.signin-block .input_detail {
+    margin-bottom: 20px;
+}
+
+.input_detail label {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.input_detail input {
+   width: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 2px solid #cccccc2e;
+    font-size: 12px;
+    margin-top: 4px;
+    background: #cccccc2e;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    /* background: #FF9933; */
+     background: #ffff;
+    padding: 14px;
+    color: #FF9933;
+    border: 2px solid #FF9933;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.submit-btn:hover {
+    color: #fff;
+    border: 2px solid #FF9933;
+    background: #FF9933;
+}
+
+@media screen and (max-width: 480px) {
+    .Sign_in-page {
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+        height: 100vh;
+    }
+    .container {
+        width: 100%;
+    }
+    .signin-block {
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
+    }
+}
+/* my style */
+.alert {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.alert-danger {
+       background-color: #FF9933;
+    border-color: #ebccd1;
+    color: #fff;
+    width: 335px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.signup-btn{
+	    display: grid;
+    width: 336px;
+    margin-top: -40px;
+     font-weight: 900;
+     font-size: 12px;
+}
+.signup-btn a{
+	    margin: 5px 0;
+    text-decoration: none;
+}
+.seller-signup-btn{
+	 display: grid;
+    width: 336px;
+    margin-top: -40px;
+     font-weight: 900;
+     font-size: 12px;
+}
+.seller-signup-btn a{
+	    margin: 5px 0;
+    text-decoration: none;
+}
+.seller-submit-btn{
+	 background: #ffff;
+	 background-color: #FF9933;
+    padding: 14px;
+    color: white;
+    border: 2px solid #FF9933;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 12px;
+}

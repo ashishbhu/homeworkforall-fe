@@ -1,0 +1,171 @@
+body
+{
+	background-color: #fff;
+}
+*{
+	margin:0px;
+	padding:0px
+}
+@font-face {
+    font-family: 'pathway_gothic_oneregular';
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot');
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff') format('woff'),
+         url('../fonts/pathwaygothicone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'continueregular';
+    src: url('../fonts/continue-webfont.eot');
+    src: url('../fonts/continue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/continue-webfont.woff2') format('woff2'),
+         url('../fonts/continue-webfont.woff') format('woff'),
+         url('../fonts/continue-webfont.ttf') format('truetype'),
+         url('../fonts/continue-webfont.svg#continueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.header{
+	
+}
+.header_button{
+	background-color:#000;
+	position:relative;
+}
+.header_logo{
+	position:absolute;
+	top: 0px; 
+	left: 35px;
+	position: absolute ! important;
+	float: none;
+}
+
+.header_navbar{
+	display:none;
+}
+.header_button .my-navbar-nav{
+	display:none !important;
+}
+.header_button .my-navbar-nav.block{
+	display:block !important;
+}
+.header_button .my-navbar-nav ul{
+	float:right !important;
+}
+.header_button .my-navbar-nav .active{
+	color:red !important;
+}
+.my-navbar-nav .style{
+	background:none;
+}
+/* ------------------section--------------*/
+.section_wrapper{
+	background: url("../images/summonbgimg.png") repeat scroll 0 0 transparent;
+	background-size:100% 100%;
+}
+.header_text{
+	position:relative;
+}
+.header_text_a {
+	margin-top:170px;
+}
+.header_text_a h3{
+	color:#fff;
+	font-size:62px;
+	font-family:impact;
+	text-align:center;
+}
+
+.my-navbar-nav{
+	
+}
+.section_mid{
+	margin-top:100px;
+}
+.section_mid img{
+	
+}
+.section_mid a{
+	color:#3de373;
+	background-color: cyan;
+    border: 2px solid #3de373;
+    padding: 20px 70px;
+	background-color:transparent;
+	text-decoration:none;
+	display:table;
+	margin:0 auto;
+}
+.section_mid a:hover{
+	background: rgba(70, 69, 69, 0.8) none repeat scroll 0px 0px / 100% 100%;
+}
+.section_mid_mob{
+	float:right;
+}
+.section_applogo{
+	margin-top:20px;
+	margin-bottom:55px;
+}
+.section_applogo_last{
+	float:right;
+}
+.navbar-default{
+	background:none;
+	border:none;
+}
+
+.navbar-header{
+	float:none;
+}
+.mybutton{
+	display:block;
+	border:none;
+	background:none !important;
+	margin-top:5px !important;
+	margin-bottom:-2px !important;
+	margin-right:10px !important;
+	transition: all 0.5s ease-in-out;
+}
+.mybutton1:hover{
+	margin-top:200px;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+	transition: all 0.5s ease-in-out;
+}
+.icon-bar{
+	padding-left: 30px!important;
+	padding-top: 0px !important;
+	border-radius: 0px !important;
+	background:#3de373 !important;
+	margin-top:7px !important;
+}
+.rotated {
+  margin-top:200px;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+	
+}
+/* ------------section--------------*/
+.section_middlelogo{
+	position:absolute;
+	left: 45%;
+    position: absolute;
+    top: 223px;
+}
