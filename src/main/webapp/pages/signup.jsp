@@ -205,18 +205,15 @@ html {
 											<form:select path="userType"
 												required="required">
 												<form:option value="" label="----- Select -----" />
-												<form:option value="userType">WRITTER</form:option>
+												<form:option value="WRITER" selected = "selected">WRITER</form:option>
 											</form:select>
-												<div class="errorCustom">
-													<form:errors path="userType" cssClass="errorEvent" />
-												</div>
 											</div>
 										</div>
 										
 										 <div class="form-group required">
                                             <label class="col-sm-3 control-label" for="firstName">First Name</label>
                                             <div class="col-sm-6">
-                                                 <form:input class="form-control" path="firstName" parsley-trigger="change" placeholder="Enter First Name" autocomplete="off" required="required" />
+                                                 <form:input class="form-control" path="firstName" parsley-trigger="change" placeholder="Enter First Name" autocomplete="off" required="required"/>
                                                 <div class="errorCustom">
                                                     <form:errors path="firstName" cssClass="errorEvent" />
                                                 </div>
@@ -253,7 +250,7 @@ html {
                                             </div>
                                         </div>
                                         
-                                        <div class="form-group required">
+                                        <%-- <div class="form-group required">
                                             <label class="col-sm-3 control-label" for="name">UserName</label>
                                             <div class="col-sm-6">
                                                  <form:input class="form-control" path="userName" parsley-trigger="change" placeholder="Enter UserName"  required="required" />
@@ -262,7 +259,7 @@ html {
                                                 </div>
 
                                             </div>
-                                        </div>
+                                        </div> --%>
                                         
                                         
                                         <div class="form-group required">
@@ -280,25 +277,25 @@ html {
  										<div class="form-group required">
                                             <label class="col-sm-3 control-label" for="name">Confirm Password</label>
                                             <div class="col-sm-6">
-                                                 <form:password class="form-control" path="confirmPassword" required="required" placeholder="Enter Confirm Password"/>
+                                                 <form:password class="form-control" path="confirmPassword" required="required" placeholder="Enter Confirm Password" />
                                                 <div class="errorCustom">
                                                     <form:errors path="confirmPassword" cssClass="errorEvent" />
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="form-group required">
-                                            <label class="col-sm-3 control-label" for="name">Country</label>
-                                            <div class="col-sm-6">
-                                                 <form:input class="form-control" path="country" required="required" placeholder="Enter Country"/>
-                                                <div class="errorCustom">
-                                                    <form:errors path="country" cssClass="errorEvent" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                     
-                                        
-                                         <div class="form-group required">
+
+									<div class="form-group required">
+										<label class="col-sm-3 control-label" for="name">Country</label>
+										<div class="col-sm-9">
+											<form:select path="country" required="required">
+												<form:option value="" label="----- Select -----" />
+												<form:option value="INDIA" selected = "selected">India(+91)</form:option>
+											</form:select>
+										</div>
+									</div>
+
+
+									<div class="form-group required">
                                             <label class="col-sm-3 control-label" for="phone">Phone</label>
                                             <div class="col-sm-6">
                                                 <form:input path="phone" class="form-control" maxlength="10" parsley-trigger="change" placeholder="Enter phone no" required = "required" 
@@ -311,7 +308,7 @@ html {
                                         
                                         <div class="clearfix"></div>
 
-									<div class="form-group required">
+									<!--<div class="form-group required">
 										<label class="col-sm-3 control-label" for="name">Date Of Birth</label>
 										<div class="input-group date datewidth" id='datetimepicker1' style="margin-left: 50px;">
 											<form:input type='text' class="form-control" path="dob"
@@ -319,7 +316,7 @@ html {
 												style="" class="glyphicon glyphicon-calendar"> </span>
 											</span>
 										</div>
-									</div>
+									</div>-->
 
 
 
@@ -331,7 +328,7 @@ html {
 											<div class="errorCustom">
 												<form:errors path="profileImageFile" cssClass="errorEvent" />
 											</div>
-											<span style="color:red;">(upload only jpeg/png image format)</span>
+											<span style="color:red;">(upload only jpg/jpeg/png image format)</span>
 												<div class="image-container">
 												<c:if test="${not empty signupRequest.getProfileImageFile()}">
 													<img src="${signupRequest.profileImageFile}"
@@ -341,8 +338,80 @@ html {
 										</div>
 									   </div>
 									   
+									   <div style="border: 2px solid;">
+									   <div class="form-group required" style="margin-top: 10px;">
+										<label class="col-sm-3 control-label" for="image">National ID</label>
+										  <c:set var="counter" value="0"></c:set>
+                                          <c:forEach items="${signupRequest.nationalIdFiles}"
+                                                var="item" varStatus="loop">
+										  <div class="col-sm-3 file-type">
+											<form:input type="file" path="nationalIdFiles[${counter}]" required="${counter == 0 ? 'required' : ''}"></form:input>
+											<span style="color:red;">(upload only doc/pdf/xlsx format)</span>
+											
+										</div>
+										<c:set var="counter" value="${counter + 1}"></c:set>
+									    </c:forEach>
+										
+									   </div>
+									   
+									   </div>
+									   
+									   <div class="form-group required" style="margin-top: 10px;">
+											<label for="qualification" class="col-sm-3 control-label">Max Qualification</label>
+											<div class="col-sm-9">
+											<form:select path="qualification"
+												required="required">
+												<form:option value="" label="----- Select -----" />
+												<form:option value="UNDERGRADUATE">Undergraduate</form:option>
+												<form:option value="GRADUATE">Graduate</form:option>
+												<form:option value="POSTGRADUATE">Postgraduate</form:option>
+												<form:option value="PHD">Phd</form:option>
+											</form:select>
+											</div>
+										</div>
+									   
+									   <div style="border: 2px solid; margin-top: 10px;">
+									   <div class="form-group required" style="margin-top: 10px;">
+										<label class="col-sm-3 control-label" for="image">Qualification Certificate</label>
+										
+										<c:set var="counter" value="0"></c:set>
+                                          <c:forEach items="${signupRequest.qualificationCertificateFiles}"
+                                                var="item" varStatus="loop">
+										<div class="col-sm-3 file-type">
+											<form:input type="file" path="qualificationCertificateFiles[${counter}]" required="${counter == 0 ? 'required' : ''}"/>
+											<span style="color:red;">(upload only doc/pdf/xlsx format)</span>
+											
+										</div>
+										<c:set var="counter" value="${counter + 1}"></c:set>
+										</c:forEach>
+									   </div>
+									   </div>
+									   
+									   <div style="border: 2px solid; margin-top: 10px;">
+									   <div class="form-group required" style="margin-top: 10px;">
+										<label class="col-sm-3 control-label" for="image">Portfolio (Max 10 file)</label>
+										
+										<c:set var="counter" value="0"></c:set>
+                                        <c:forEach items="${signupRequest.portfolioFiles}"
+                                                var="item" varStatus="loop">
+										<div class="col-sm-3 file-type">
+											<form:input type="file" path="portfolioFiles[${counter}]" required="${counter == 0 ? 'required' : ''}"/>
+											<span style="color:red;">(upload only doc/pdf/xlsx image format)</span>
+										</div>
+										<c:set var="counter" value="${counter + 1}"></c:set>
+										</c:forEach>
+										
+									   </div>
+									   </div>
+									   
+									    <div class="form-group required" style="margin-top: 10px;">
+                                            <label class="col-sm-3 control-label" for="email">Linkedin Url</label>
+                                            <div class="col-sm-6">
+                                                 <form:input class="form-control" path="linkedinUrl" parsley-trigger="change" placeholder="Enter Linkedin Url" autocomplete="off" required="required" />
+                                            </div>
+                                        </div>
 									
-                                			<div class="form-group">
+                                			<div class="form-group" style="margin-top: 10px;">
                                             <div class="col-sm-offset-2 col-sm-10">
                                                 <button type="submit" id="btnSubmit" class="btn btn-custom">SUBMIT</button>
                                             </div>

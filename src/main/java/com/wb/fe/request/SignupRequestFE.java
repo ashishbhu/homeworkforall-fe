@@ -1,6 +1,8 @@
 package com.wb.fe.request;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
@@ -11,7 +13,7 @@ public class SignupRequestFE implements Serializable {
 	private String email;
 
 	private String password;
-	
+
 	private String confirmPassword;
 
 	private String userName;
@@ -37,8 +39,16 @@ public class SignupRequestFE implements Serializable {
 	private String profileImage;
 
 	private String linkedinUrl;
-	
+
 	private MultipartFile profileImageFile;
+
+	private String qualification;
+
+	private List<MultipartFile> qualificationCertificateFiles = new ArrayList<>();
+
+	private List<MultipartFile> nationalIdFiles = new ArrayList<>();
+
+	private List<MultipartFile> portfolioFiles = new ArrayList<>();
 
 	public String getEmail() {
 		return email;
@@ -166,6 +176,38 @@ public class SignupRequestFE implements Serializable {
 
 	public void setProfileImageFile(MultipartFile profileImageFile) {
 		this.profileImageFile = profileImageFile;
+	}
+
+	public String getQualification() {
+		return qualification;
+	}
+
+	public void setQualification(String qualification) {
+		this.qualification = qualification;
+	}
+
+	public List<MultipartFile> getQualificationCertificateFiles() {
+		return qualificationCertificateFiles;
+	}
+
+	public void setQualificationCertificateFiles(List<MultipartFile> qualificationCertificateFiles) {
+		this.qualificationCertificateFiles = qualificationCertificateFiles;
+	}
+
+	public List<MultipartFile> getNationalIdFiles() {
+		return nationalIdFiles;
+	}
+
+	public void setNationalIdFiles(List<MultipartFile> nationalIdFiles) {
+		this.nationalIdFiles = nationalIdFiles;
+	}
+
+	public List<MultipartFile> getPortfolioFiles() {
+		return portfolioFiles;
+	}
+
+	public void setPortfolioFiles(List<MultipartFile> portfolioFiles) {
+		this.portfolioFiles = portfolioFiles;
 	}
 
 }
