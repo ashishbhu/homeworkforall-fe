@@ -50,6 +50,7 @@ public class UserServiceProxy {
 	public ResponseDTO signup(SignupRequestFE request) {
 		ResponseDTO response = new ResponseDTO();
 		try {
+			System.out.println("-------inside frontend signup method------");
 			HttpHeaders httpHeaders = new HttpHeaders();
 //			httpHeaders.set("Content-Type", "application/json");
 			httpHeaders.setContentType(MediaType.MULTIPART_FORM_DATA);
@@ -98,6 +99,7 @@ public class UserServiceProxy {
 			e.printStackTrace();
 			logger.info("-------- exception " + e.getMessage() + " occured calling signup");
 		}
+		System.out.println("-------end frontend signup method------");
 		return response;
 	}
 
